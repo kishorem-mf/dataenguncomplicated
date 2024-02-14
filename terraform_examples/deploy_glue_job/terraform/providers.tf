@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.6.5"
+  required_version = "> 1.6.5"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -10,15 +10,15 @@ terraform {
   }
 
   provider "aws" {
-    region = "ca-central-1"  # Set your desired AWS region
+    region = "ap-south-1"  # Set your desired AWS region
     profile = "default"
 }
 
-terraform {
-  backend "s3" {
-    bucket = "adriano-data-uploads"
-    key    = "terraform/terraform.tfstate"
-    region = "ca-central-1"
-    profile = "default"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket = "kishore-test-160988"
+#     key    = "terraform/terraform.tfstate"
+#     region = "ap-south-1"
+#     profile = "default"
+#   }
+# }

@@ -1,2 +1,2 @@
 project = "terraform_glue_job_deployment"
-s3_bucket = "adriano-data-uploads"
+s3_bucket = "kishore-data-uploads"
